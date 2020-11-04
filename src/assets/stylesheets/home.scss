@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color:#182434;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 50px;
+}
+p{
+    font-size: 1.2em;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+    padding:0 7%;
+    .toggle{
+        font-size: 25px;
+        cursor: pointer;
+    }
+    ul{
+        display: none;
+    }
+}
+
+.home-content{
+    margin: 10% 5%;
+    .welcome{
+        margin: 15px;
+        h1{
+            margin-bottom: 2%;
+
+        }
+    }
+
+    .projects{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10%;
+
+        .project{
+            width: 45%;
+            margin: 2.5%;
+            border-radius: 7px;
+            padding:30px 20px 20px;
+            transition: opacity 0.3s linear;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+
+            i{
+                margin-bottom: 10%;
+                margin-left: 80%;
+                font-size: 30px;
+                position: relative;
+                right: 0;
+            }
+        }
+        .two{
+            opacity: .7;
+        }
+        .three{
+            opacity: .3;
+        }
+    }
+    .addproject{
+        background-color: #ED3D69;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        padding: 10px 17px;
+        position: fixed;
+        bottom: 5%;
+        left: 44.5%;
+        outline: none;
+        cursor: pointer;
+
+    }
+    #welcomeart{
+        position: absolute;
+        z-index: -1;
+        top:-100px;
+        left:-100px;
+    }
+}
